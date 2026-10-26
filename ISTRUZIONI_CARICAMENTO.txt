@@ -1,0 +1,1 @@
+Caricare tutti i file contenuti in questa cartella nella RADICE del repository GitHub studio-legale-grimaldi, ramo main. Non caricare la cartella come sottocartella. Sovrascrivere i file con gli stessi nomi. Verificare contatti, testi e grafica prima della pubblicazione. Successivamente controllare le pagine pubbliche e la sitemap in Search Console.
