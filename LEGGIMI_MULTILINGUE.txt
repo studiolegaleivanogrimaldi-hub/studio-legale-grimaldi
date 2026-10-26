@@ -1,0 +1,7 @@
+SITO MULTILINGUE STUDIO LEGALE IVANO GRIMALDI
+
+Contiene le 10 pagine originali in italiano e 10 pagine per ciascuna delle lingue inglese, spagnola e francese.
+Numero fisso +39 095 086 6977 (tel:+390950866977). WhatsApp +39 328 377 6086. Modulo Formspree https://formspree.io/f/xyeeejjb.
+Le pagine straniere sono versioni redazionali sintetiche fedeli agli argomenti originali, NON traduzioni integrali parola per parola.
+ATTENZIONE PRIVACY: le versioni straniere sono testi informativi da sottoporre a verifica del titolare; la versione italiana allegata conserva contenuti da aggiornare per hosting GitHub Pages e Formspree.
+Caricare su GitHub i file e le cartelle estratti, non lo ZIP. Controllare e provare il modulo Formspree dopo il deploy.
