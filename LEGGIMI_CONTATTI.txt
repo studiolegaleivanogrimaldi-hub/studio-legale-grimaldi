@@ -1,0 +1,8 @@
+AGGIORNAMENTO CONTATTI - STUDIO LEGALE IVANO GRIMALDI
+
+Caricare su GitHub i FILE estratti dallo ZIP, non lo ZIP.
+Sostituire i file omonimi nel ramo main.
+WhatsApp: +39 328 377 6086. Email: studiolegaleivanogrimaldi@gmail.com.
+Il modulo della homepage NON invia automaticamente email: apre il programma email del visitatore con testo precompilato, che il visitatore deve inviare. Anche WhatsApp richiede conferma invio.
+Per ricevere messaggi direttamente dal modulo senza un client email occorre un servizio esterno (con configurazione e informativa privacy adeguate).
+Controllare contatti, link e privacy prima della pubblicazione.
