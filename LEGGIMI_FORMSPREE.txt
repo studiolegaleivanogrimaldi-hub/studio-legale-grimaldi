@@ -1,0 +1,8 @@
+FORMULARIO EMAIL FORMSPREE
+Endpoint: https://formspree.io/f/xyeeejjb
+La homepage contiene un modulo che invia direttamente a Formspree.
+Verifica in Formspree che la casella destinataria sia studiolegaleivanogrimaldi@gmail.com e sia confermata.
+Esegui una prova di invio dalla pagina pubblicata.
+Prima di pubblicare, rivedi la privacy policy (sezione sul fornitore Formspree) e gli adempimenti GDPR, inclusa eventuale nomina a responsabile del trattamento e trasferimenti.
+Il pulsante Apri la tua email usa mailto; WhatsApp rimane disponibile.
+Carica i file estratti nella radice del repository GitHub Pages.
