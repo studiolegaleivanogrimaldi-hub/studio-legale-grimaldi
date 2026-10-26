@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://studiolegale-avvocato-ivanogrimaldi.netlify.app/sitemap.xml

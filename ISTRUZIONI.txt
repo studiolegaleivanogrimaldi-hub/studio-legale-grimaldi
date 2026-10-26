@@ -1,0 +1,4 @@
+SITO STUDIO LEGALE - QUATTRO SETTORI ESCLUSIVI
+Diritto bancario e finanziario; diritto tributario; diritto penale dell'economia; compliance.
+Le pagine civile/penale generico e internazionale sono state eliminate. Il file _redirects gestisce i vecchi indirizzi su Netlify.
+Caricare il contenuto di questo ZIP nella cartella pubblica del servizio hosting, con index.html nella radice.
