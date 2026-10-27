@@ -1,0 +1,13 @@
+CALCOLATORI GRIMALDI – VERSIONE CON PARAMETRI ANNUALI
+
+Pubblicazione: caricare la cartella calcolatori con tutti i file nel repository GitHub Pages.
+
+AGGIORNAMENTO:
+1) Verificare assegno sociale su INPS e norme su fonti ufficiali.
+2) Aprire parametri.js e aggiungere un nuovo anno con tutti i parametri verificati.
+3) Aggiornare verificatoIl (AAAA-MM-GG) e gli eventuali valori normativi.
+4) Caricare il file aggiornato su GitHub; il sito mostrerà il nuovo anno.
+5) Eseguire test con casi di controllo prima della pubblicazione.
+
+NON aggiornamento automatico: se la normativa cambia durante l'anno è necessaria una verifica manuale. Anni non presenti non sono selezionabili.
+Ambito: singolo pignoramento alla fonte, ordinario o AdER. Esclusi crediti alimentari, concorso, cessioni, accrediti su conto, situazioni speciali.
