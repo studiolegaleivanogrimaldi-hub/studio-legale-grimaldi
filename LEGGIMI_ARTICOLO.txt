@@ -1,0 +1,2 @@
+Nuove pagine: opposizione-tardiva-consumatore-cartolarizzazione.html e cassazione-sezioni-unite-9479-2023.html
+Pubblicazione: estrarre ZIP e caricare il contenuto nella radice del repository GitHub, sovrascrivendo index.html, opposizione-decreto-ingiuntivo.html e sitemap.xml. Non caricare lo ZIP come singolo file.
