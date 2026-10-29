@@ -2,5 +2,5 @@ CARICAMENTO GITHUB PAGES
 1. Aprire repository studio-legale-grimaldi.
 2. Caricare TUTTI i file e la cartella calcolatori presenti in questo ZIP nella radice del repository, sostituendo quelli esistenti.
 3. Fare Commit changes.
-4. Verificare https://studiolegaleivanogrimaldi-hub.github.io/studio-legale-grimaldi/calcolatori/
+4. Verificare https://studiolegale-ivanogrimaldi.it/calcolatori/
 5. Parametri normativi aggiornabili nel file calcolatori/parametri.js, solo previa verifica giuridica.
