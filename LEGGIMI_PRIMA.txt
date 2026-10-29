@@ -1,0 +1,12 @@
+STUDIO LEGALE GRIMALDI - PACCHETTO QUATTRO LINGUE
+
+Contiene quattro pagine (italiano, inglese, francese, spagnolo), CSS e articolo PDF sul decreto ingiuntivo europeo.
+NON contiene la homepage o il sito completo: e' un aggiornamento da aggiungere al repository esistente.
+
+1. Estrarre lo ZIP.
+2. Caricare i quattro file .html, il CSS e il PDF nella cartella che contiene index.html su GitHub.
+3. Non sovrascrivere index.html.
+4. Aggiungere i collegamenti al menu di index.html (vedi COLLEGAMENTI_MENU.html.txt).
+5. Aggiornare sitemap.xml con i quattro URL.
+6. Verificare che https://studiolegale-ivanogrimaldi.it/ sia il dominio canonico effettivo; altrimenti correggere canonical e hreflang.
+7. Controllare privacy, testi, contatti e link prima della pubblicazione.
