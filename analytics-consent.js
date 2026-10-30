@@ -13,7 +13,17 @@
     s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(ID);
     document.head.appendChild(s);
   }
-  function apply(v){store(v);document.getElementById('grimaldi-cookie-banner').hidden=true;
+  function clearAnalyticsCookies(){
+    document.cookie.split(';').forEach(function(part){
+      var name=part.split('=')[0].trim();
+      if(name==='_ga'||name.indexOf('_ga_')===0){
+        var host=location.hostname;var domains=[''];
+        var bits=host.split('.');for(var i=0;i<bits.length-1;i++)domains.push('; domain='+bits.slice(i).join('.'));
+        domains.forEach(function(domain){document.cookie=name+'=; Max-Age=0; path=/'+domain+'; SameSite=Lax';});
+      }
+    });
+  }
+  function apply(v){if(v==='no')clearAnalyticsCookies();store(v);document.getElementById('grimaldi-cookie-banner').hidden=true;
     if(v==='yes')analytics();
     else if(window.__grimaldiAnalyticsLoaded){window.location.reload();}
   }
@@ -28,8 +38,10 @@
     document.getElementById('grimaldi-reject').addEventListener('click',function(){apply('no');});
     document.getElementById('grimaldi-accept').addEventListener('click',function(){apply('yes');});
     var foot=document.querySelector('footer')||document.body;
-    var p=document.createElement('p');p.style.cssText='margin:10px 0;font-size:13px';
-    var a=document.createElement('a');a.href='#';a.textContent='Modifica preferenze statistiche';
+    var p=document.createElement('p');p.style.cssText='margin:16px 0 10px;font-size:14px;text-align:center;clear:both';
+    var a=document.createElement('a');a.href='#';a.textContent='Gestisci preferenze cookie';
+    a.style.cssText='color:#e5c67a!important;text-decoration:underline!important;font-weight:700!important;display:inline-block!important;padding:9px 12px!important;border:1px solid #e5c67a!important;border-radius:6px!important;background:#123d32!important;cursor:pointer!important';
+    a.setAttribute('aria-label','Gestisci o revoca il consenso ai cookie statistici');
     a.addEventListener('click',function(e){e.preventDefault();show();});p.appendChild(a);foot.appendChild(p);
     if(choice()==='yes')analytics();else if(choice()!=='no')show();
     document.querySelectorAll('[data-privacy-settings]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();show();});});
