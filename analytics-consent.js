@@ -23,7 +23,7 @@
       }
     });
   }
-  function apply(v){if(v==='no')clearAnalyticsCookies();store(v);document.getElementById('grimaldi-cookie-banner').hidden=true;
+  function apply(v){if(v==='no'){window['ga-disable-'+ID]=true;clearAnalyticsCookies();}store(v);document.getElementById('grimaldi-cookie-banner').hidden=true;
     if(v==='yes')analytics();
     else if(window.__grimaldiAnalyticsLoaded){window.location.reload();}
   }
@@ -43,7 +43,7 @@
     a.style.cssText='color:#e5c67a!important;text-decoration:underline!important;font-weight:700!important;display:inline-block!important;padding:9px 12px!important;border:1px solid #e5c67a!important;border-radius:6px!important;background:#123d32!important;cursor:pointer!important';
     a.setAttribute('aria-label','Gestisci o revoca il consenso ai cookie statistici');
     a.addEventListener('click',function(e){e.preventDefault();show();});p.appendChild(a);foot.appendChild(p);
-    if(choice()==='yes')analytics();else if(choice()!=='no')show();
+    if(choice()==='yes')analytics();else {window['ga-disable-'+ID]=true;if(choice()!=='no')show();}
     document.querySelectorAll('[data-privacy-settings]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();show();});});
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();

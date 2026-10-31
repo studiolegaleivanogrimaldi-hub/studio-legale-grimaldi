@@ -1,0 +1,3 @@
+Aggiornamento: informativa richieste preliminari e criteri di conservazione; sitemap con cinque pagine pubbliche aggiuntive; rafforzata disattivazione Analytics alla revoca.
+Verifiche ancora necessarie: tempi effettivi di conservazione Formspree/Gmail, accordi con fornitori, impostazioni GA4, verifica live dei collegamenti e test consenso. Non costituisce certificazione GDPR.
+Pubblicazione: estrarre ZIP, caricare contenuti della cartella studio-legale-grimaldi-main nella radice del repository GitHub, mantenendo sottocartelle e file CNAME.
