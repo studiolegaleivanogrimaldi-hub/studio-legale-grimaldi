@@ -1,0 +1,6 @@
+Aggiornamento multilingue - 1 novembre 2026
+Pagine nuove: 30 + lingue.html
+Pagine esistenti mantenute: 8
+Pagine di servizio per lingua: 36 in totale (8 già esistenti + 30 nuove).
+Sono state aggiunte una pagina di indice, collegamento dalla homepage, hreflang alle pagine originali e sitemap.
+IMPORTANTE: fare revisionare le traduzioni da un professionista madrelingua competente in diritto italiano; verificare disponibilità reale di consulenza nelle lingue e tutti i riferimenti normativi prima della pubblicazione. Le pagine sono testi introduttivi, non consulenze.
