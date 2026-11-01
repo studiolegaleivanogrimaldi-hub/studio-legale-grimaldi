@@ -1,0 +1,1 @@
+Il calcolo storico permette di inserire indici FOI di periodi anteriori al 2026 e il coefficiente di raccordo. NON recupera automaticamente gli indici: serve una fonte dati verificata. Il file fornito dall’utente era la versione DIRETTA, non quella con workflow di aggiornamento automatico. Non dichiarare automatismo senza installare e collaudare un aggiornamento dati ufficiale.
