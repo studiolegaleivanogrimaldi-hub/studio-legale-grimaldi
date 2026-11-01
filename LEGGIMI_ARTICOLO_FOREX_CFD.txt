@@ -1,0 +1,3 @@
+Nuovo articolo: perdite-forex-cfd-knock-out.html
+Collegamenti aggiunti alla homepage e alla pagina diritto-bancario.html.
+Sitemap aggiornata. Caricare i file nella radice del repository GitHub Pages, conservando CNAME e le altre cartelle.
