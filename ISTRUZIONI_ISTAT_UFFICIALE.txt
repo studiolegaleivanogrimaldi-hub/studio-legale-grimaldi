@@ -1,0 +1,1 @@
+Integrato il widget ufficiale Rivaluta ISTAT nella pagina rivalutazione-istat-locazioni.html. Il calcolatore personalizzato al 75%/100% richiede ancora di riportare il valore ISTAT: non è stata implementata una API automatica diretta. Verificare su sito pubblicato che ISTAT consenta visualizzazione iframe; presente link esterno di riserva.

@@ -1,0 +1,6 @@
+AGGIORNAMENTO CALCOLATORI
+La pagina /calcolatori/ contiene ora il collegamento a /calcolatori/verifiche-legali/.
+Sono stati aggiunti cinque nuovi strumenti, conservando i due calcolatori esistenti per stipendio e pensione.
+Per ISTAT inserire manualmente la variazione FOI senza tabacchi ufficiale del periodo.
+Le verifiche hanno natura orientativa e richiedono controllo professionale.
+Pubblicare tutti i file del repository e inviare la sitemap aggiornata a Google Search Console.
