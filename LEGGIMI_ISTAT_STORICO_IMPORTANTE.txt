@@ -1,0 +1,7 @@
+CALCOLATORE ISTAT — STATO REALE
+
+Questa versione corregge il raccordo tra basi e i percorsi dell’archivio, e aggiunge soltanto mesi 2024-2025 verificati. NON contiene ancora l’intera serie 2000-2026. Per i mesi assenti il calcolatore richiede indici ufficiali manuali. Non utilizzare valori ipotetici.
+
+Raccordi ISTAT: 1995→2010 1,373; 2010→2015 1,071; 2015→2025 1,214. Fonte: https://www.istat.it/wp-content/uploads/2026/01/NM_variazioni_coefficienti_2026.pdf
+
+L’aggiornamento GitHub Actions recupera soltanto l’ultimo indice mensile. Per ottenere una copertura completa dal 2000 serve importare la serie ufficiale verificata.

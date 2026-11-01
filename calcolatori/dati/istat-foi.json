@@ -3,6 +3,50 @@
   "checked_at": "2026-11-01",
   "source": "https://www.istat.it/Notizia/Indice-Dei-Prezzi-Per-Le-Rivalutazioni-Monetarie/",
   "months": {
+    "2024-10": {
+      "value": 120.1,
+      "base": 2015
+    },
+    "2024-11": {
+      "value": 120.1,
+      "base": 2015
+    },
+    "2024-12": {
+      "value": 120.2,
+      "base": 2015
+    },
+    "2025-01": {
+      "value": 120.9,
+      "base": 2015
+    },
+    "2025-02": {
+      "value": 121.1,
+      "base": 2015
+    },
+    "2025-03": {
+      "value": 121.4,
+      "base": 2015
+    },
+    "2025-04": {
+      "value": 121.3,
+      "base": 2015
+    },
+    "2025-05": {
+      "value": 121.2,
+      "base": 2015
+    },
+    "2025-06": {
+      "value": 121.3,
+      "base": 2015
+    },
+    "2025-07": {
+      "value": 121.8,
+      "base": 2015
+    },
+    "2025-08": {
+      "value": 121.8,
+      "base": 2015
+    },
     "2025-09": {
       "value": 121.7,
       "base": 2015
@@ -55,5 +99,7 @@
       "value": 104.3,
       "base": 2025
     }
-  }
+  },
+  "historical_coverage": "partial; do not infer missing months",
+  "historical_reference": "https://www.istat.it/Notizia/Indice-Dei-Prezzi-Per-Le-Rivalutazioni-Monetarie/"
 }

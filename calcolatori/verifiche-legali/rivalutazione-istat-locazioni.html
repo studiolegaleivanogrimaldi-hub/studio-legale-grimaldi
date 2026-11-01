@@ -11,10 +11,19 @@ async function caricaIstat(){
 function aggiornaAnnuale(){const mese=document.getElementById('periodo').value;
  if(!mese){document.getElementById('foi').value='';return;}const [y,m]=mese.split('-').map(Number);const prev=(y-1)+'-'+String(m).padStart(2,'0');
  const a=foiArchive[mese],b=foiArchive[prev];const out=document.getElementById('statoIstat');
- if(a&&b){const factor=raccordoBasi(b.base,a.base);if(factor!==null){const v=Math.round((a.value*factor/b.value-1)*1000)/10;document.getElementById('foi').value=v;out.textContent='Variazione annua calcolata con gli indici archivio: '+v+'%. Periodi '+prev+' / '+mese+'. Controlla il valore ufficiale prima di impieghi contrattuali.';return;}}
+ if(a&&b){const factor=raccordoBasi(b.base,a.base);if(factor!==null){const v=Math.round(((a.value*factor/b.value)-1)*1000)/10;document.getElementById('foi').value=v;out.textContent='Variazione annua calcolata con gli indici archivio: '+v+'%. Periodi '+prev+' / '+mese+'. Controlla il valore ufficiale prima di impieghi contrattuali.';return;}}
  document.getElementById('foi').value='';out.textContent='Periodo non coperto dall’archivio: inserisci la variazione ufficiale ISTAT manualmente.';
 }
-function raccordoBasi(a,b){return Number(a)===Number(b)?1:null;}
+function raccordoBasi(a,b){
+  if(Number(a)===Number(b))return 1;
+  const bases=[1995,2010,2015,2025];
+  const coeff={'1995-2010':1.373,'2010-2015':1.071,'2015-2025':1.214};
+  let i=bases.indexOf(Number(a)),j=bases.indexOf(Number(b));
+  if(i<0||j<0||i>j)return null;
+  let factor=1;
+  for(;i<j;i++)factor*=coeff[bases[i]+'-'+bases[i+1]];
+  return factor;
+}
 function aggiornaStorico(){const da=document.getElementById('da').value,a=document.getElementById('a').value;const i=foiArchive[da],j=foiArchive[a];document.getElementById('indiceDa').value=i?i.value:'';document.getElementById('indiceA').value=j?j.value:'';document.getElementById('raccordo').value='';
  if(i&&j){const f=raccordoBasi(i.base,j.base);if(f!==null){document.getElementById('raccordo').value=f;document.getElementById('statoStorico').textContent='Indici compilati dall’archivio FOI ('+da+' e '+a+'). Verifica le condizioni contrattuali.';return;}}
  document.getElementById('statoStorico').textContent='Indici mancanti o basi diverse: inserisci gli indici e il coefficiente di raccordo ufficiali, verificati su ISTAT Rivaluta.';
