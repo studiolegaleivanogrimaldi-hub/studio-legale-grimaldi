@@ -1,0 +1,10 @@
+CALCOLATORE ISTAT: ARCHIVIO E AGGIORNAMENTO
+
+La pagina compila automaticamente gli indici soltanto per i mesi presenti in calcolatori/dati/istat-foi.json.
+L’archivio iniziale comprende settembre 2025 - settembre 2026. Non contiene ancora l’intera serie storica.
+La procedura GitHub Actions tenta di acquisire il nuovo indice dalla pagina ufficiale ISTAT ogni martedì.
+Il parser è prudente: se il formato della pagina cambia, l’azione fallisce e NON pubblica un valore inventato.
+Non recupera automaticamente le serie storiche precedenti al 2025: in questi casi resta possibile l’inserimento manuale.
+Per attivare: caricare anche la cartella nascosta .github, abilitare le Actions e i permessi di scrittura nel repository; eseguire manualmente il workflow e verificare il risultato.
+Il valore del periodo precedente e i coefficienti di raccordo devono essere verificati per utilizzi contrattuali.
+Non è prevista alcuna richiesta di consulenza.
