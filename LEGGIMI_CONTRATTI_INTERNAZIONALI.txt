@@ -1,0 +1,1 @@
+Aggiunte 4 pagine contratti internazionali IT/EN/FR/ES, link homepage, opzione modulo contatti e sitemap. Caricare il contenuto della cartella studio-legale-grimaldi-main nella radice del repository GitHub. Nessuna modifica alle funzioni ISTAT. Il link email apre il programma di posta del visitatore: non invia automaticamente la richiesta.
