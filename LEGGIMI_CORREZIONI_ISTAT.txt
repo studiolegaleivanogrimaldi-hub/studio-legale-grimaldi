@@ -1,0 +1,1 @@
+Correzioni: percorso archivio JSON corretto; coefficienti di raccordo non verificati rimossi; campi storici azzerati al cambio periodo; nessun calcolo con valori mancanti. Il recupero della serie storica completa NON è implementato. Per basi differenti il coefficiente deve essere verificato e inserito manualmente.
