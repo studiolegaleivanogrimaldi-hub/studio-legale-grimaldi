@@ -1,0 +1,12 @@
+AGGIORNAMENTO SEO – 3 novembre 2026
+
+File modificati: robots.txt, index.html, opposizione-decreto-ingiuntivo.html, inheritance-in-italy.html.
+
+- Robots: accesso esplicito a OAI-SearchBot e Googlebot (resta consentito a tutti i crawler).
+- Home: collegamenti contestuali verso opposizione decreto ingiuntivo e successioni internazionali.
+- Opposizione decreto ingiuntivo: title e description orientati alla ricerca, FAQ visibili con cautele legali e link di consulenza.
+- Inheritance in Italy: title e description in inglese, FAQ visibili e link di consulenza.
+
+Non modificati: cookie/analytics, contatti preesistenti, grafica globale, sitemap, canonical, pagine multilingue, file di deploy.
+
+NOTA: nessuna modifica garantisce posizionamento, citazione AI o acquisizione di clienti. Verificare i contenuti legali prima della pubblicazione. Dopo il deploy, controllare Search Console e monitorare clic e richieste.
