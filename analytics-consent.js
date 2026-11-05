@@ -23,7 +23,7 @@
       }
     });
   }
-  function apply(v){if(v==='no'){window['ga-disable-'+ID]=true;clearAnalyticsCookies();}store(v);document.getElementById('grimaldi-cookie-banner').hidden=true;
+  function apply(v){if(v==='yes'){window['ga-disable-'+ID]=false;}else if(v==='no'){window['ga-disable-'+ID]=true;clearAnalyticsCookies();}store(v);document.getElementById('grimaldi-cookie-banner').hidden=true;
     if(v==='yes')analytics();
     else if(window.__grimaldiAnalyticsLoaded){window.location.reload();}
   }
