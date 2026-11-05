@@ -1,0 +1,9 @@
+CHAT BIDIREZIONALE - INSTALLAZIONE
+1. Aprire Supabase > SQL Editor > New query.
+2. Incollare tutto il contenuto di AGGIORNAMENTO_CHAT_BIDIREZIONALE.sql e premere Run.
+3. Solo dopo Success, caricare i file dello ZIP nel repository GitHub, mantenendo la struttura.
+4. Aprire il sito in una finestra privata, inviare un messaggio, aprire chat-admin.html e rispondere.
+5. Tornare alla finestra privata e premere Aggiorna messaggi (oppure attendere 15 secondi).
+NOTA: le conversazioni precedenti create senza token rimangono leggibili dal pannello admin ma non recuperabili dai visitatori.
+Il token resta nel browser del visitatore. Cancellando i dati del browser o cambiando dispositivo si perde l'accesso.
+LIMITAZIONI: il limite di 5 messaggi/minuto si applica alle conversazioni esistenti, non alla creazione di nuove conversazioni. Prima di promuovere il servizio su larga scala aggiungere CAPTCHA/rate limiting server-side anti-spam. Non usare la chat per dati sensibili o urgenze.
