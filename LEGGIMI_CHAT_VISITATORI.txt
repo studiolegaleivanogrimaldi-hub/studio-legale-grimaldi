@@ -1,0 +1,9 @@
+CHAT VISITATORI - INSTALLAZIONE E SICUREZZA
+
+Aggiunti solo: index.html (widget), chat-widget.js, chat-widget.css. Il pannello chat-admin.html è invariato.
+
+ATTENZIONE: il widget non è stato verificato contro il database Supabase in produzione. Prima di pubblicarlo, controllare schema e Row Level Security (RLS): le tabelle chat_conversations e chat_messages devono consentire solo INSERT anonimi limitati, impedire SELECT/UPDATE/DELETE anonimi e impedire ai visitatori di inviare messaggi con sender=studio. È consigliabile usare una Edge Function con rate limiting, CAPTCHA e transazione atomica invece di consentire INSERT diretti: altrimenti esistono rischi di spam, conversazioni vuote e abuso. Verificare che i valori di sender supportati siano visitor e studio, e che chat_conversations.status accetti open.
+
+TEST: pubblicare solo dopo verifica RLS; aprire homepage in incognito, inviare un messaggio di prova, entrare in chat-admin.html con MFA, premere Aggiorna e verificare il messaggio. Non inviare dati riservati durante il test.
+
+La chat consente al visitatore di inviare un messaggio, ma non di leggere risposte in tempo reale. Per una chat bidirezionale servono ulteriori misure di autenticazione/accesso ai messaggi.
