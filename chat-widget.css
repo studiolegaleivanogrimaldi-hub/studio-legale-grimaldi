@@ -18,3 +18,12 @@
 .slg-contact-strip .slg-chat #slg-chat-panel[hidden]{display:none}
 .slg-contact-note{font-size:.85rem;margin:12px 0 0;color:#536576}
 @media(max-width:480px){.slg-contact-links{gap:8px}.slg-contact-link,.slg-contact-strip .slg-chat #slg-chat-toggle{padding:11px 13px;font-size:.9rem}}
+
+/* Homepage: WhatsApp e Chat sulla stessa riga di Apri la tua email. */
+.contact-actions{align-items:center}
+.contact-actions .slg-chat{position:static!important;inset:auto!important;z-index:auto!important;display:block}
+.contact-actions .slg-chat #slg-chat-toggle{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 19px;border-radius:9px;box-shadow:none;background:#173b35;color:#fff;white-space:nowrap}
+.contact-actions .slg-chat #slg-chat-panel{position:static!important;inset:auto!important;box-sizing:border-box;width:min(100%,520px);max-height:none;overflow:visible;margin:12px 0 0;box-shadow:0 3px 12px #0002}
+.contact-actions .slg-chat #slg-chat-panel[hidden]{display:none}
+.contact-actions .slg-chat:has(#slg-chat-panel:not([hidden])){flex-basis:100%}
+@media(max-width:520px){.contact-actions{gap:8px}.contact-actions .btn,.contact-actions .slg-chat #slg-chat-toggle{font-size:.9rem;padding:10px 12px}}
