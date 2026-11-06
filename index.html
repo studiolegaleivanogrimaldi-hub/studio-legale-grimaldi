@@ -68,5 +68,33 @@
  const body=['Nome e cognome: '+get('name'),'Email: '+get('email'),'Telefono (facoltativo): '+get('telefono'),'Materia: '+get('materia'),'','Descrizione sintetica:',''+get('message'),'','Ho preso visione dell’informativa privacy del sito.'].join('\n');
  window.location.href='mailto:studiolegaleivanogrimaldi@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
  return false;
-}</script><link href="/chat-widget.css" rel="stylesheet"/><script src="/chat-widget.js" type="module"></script>
+}</script><link href="/chat-widget.css" rel="stylesheet"/><script>
+/* Carica Supabase soltanto alla prima apertura della chat. */
+(() => {
+  const toggle = document.getElementById('slg-chat-toggle');
+  if (!toggle) return;
+  let loading = false;
+  toggle.addEventListener('click', async function firstOpen(event) {
+    if (loading) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    loading = true;
+    toggle.disabled = true;
+    try {
+      await import('/chat-widget.js');
+      toggle.removeEventListener('click', firstOpen);
+      toggle.disabled = false;
+      toggle.click();
+    } catch (error) {
+      console.warn('Caricamento chat non disponibile', error);
+      const status = document.getElementById('slg-chat-status');
+      const panel = document.getElementById('slg-chat-panel');
+      if (panel) panel.hidden = false;
+      if (status) status.textContent = 'Chat temporaneamente non disponibile. Usa WhatsApp o email.';
+      toggle.disabled = false;
+      loading = false;
+    }
+  });
+})();
+</script>
 </body></html>
