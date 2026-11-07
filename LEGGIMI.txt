@@ -1,0 +1,1 @@
+Carica SOLO index.html nella cartella principale (root) del repository GitHub del sito. Non caricare LEGGIMI.txt. Mantiene gli altri file invariati.
