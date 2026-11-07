@@ -1,0 +1,17 @@
+STUDIO LEGALE GRIMALDI - PACCHETTO MULTILINGUE (5 LINGUE)
+
+Contiene 40 pagine HTML: 8 in italiano, 8 in inglese, 8 in tedesco, 8 in francese, 8 in spagnolo.
+Le 8 pagine italiane conservano i testi precedenti, con soli collegamenti tra lingue e hreflang aggiunti.
+Le 32 nuove pagine tradotte si trovano nelle cartelle en/, de/, fr/, es/.
+La sitemap.xml deriva dal precedente pacchetto: mantiene tutti gli URL precedenti e aggiunge le versioni linguistiche.
+
+CARICAMENTO SICURO
+1. Fare una copia di backup del repository attuale.
+2. Caricare i file HTML italiani nella radice, le cartelle en de fr es nella radice e sitemap.xml.
+3. Non cancellare alcun file già pubblicato.
+4. Se la sitemap online è cambiata dall'ultimo ZIP, NON sovrascriverla: unire prima i nuovi URL alla versione corrente.
+5. Verificare URL, canonical, hreflang e link, poi inviare la sitemap a Search Console.
+6. Aggiungere collegamenti dal menu o da pagine esistenti soltanto dopo la verifica.
+
+NOTA: traduzioni da sottoporre a revisione giuridico-linguistica prima della pubblicazione; nessuna promessa di risultati.
+Il primo contatto serve a richiedere preventivo per parere scritto a pagamento, non una consulenza gratuita.
