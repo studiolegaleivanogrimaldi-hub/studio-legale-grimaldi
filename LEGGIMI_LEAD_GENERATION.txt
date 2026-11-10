@@ -1,0 +1,8 @@
+LEAD GENERATION - VERSIONE 1
+
+Modificati solo diritto-bancario.html e aggiunto lead-events.js.
+Inserita sezione dedicata alla richiesta di informazioni su controversie bancarie, con link WhatsApp/email e collegamenti a problemi specifici.
+Misurazione clic GA4: evento lead_contact_click, parametri contact_channel, legal_area e page_path. L'evento parte solo se Google Analytics e gia attivo con consenso.
+Non vengono raccolti dati tramite nuovi form; non sono stati modificati recapiti, sitemap, canonical, altri contenuti o configurazione Analytics.
+Per pubblicare: caricare il contenuto della cartella studio-legale-grimaldi-main nella root del repository GitHub, sostituendo il file omonimo e aggiungendo lead-events.js.
+Verifica: aprire diritto-bancario.html, provare link e controllare GA4 DebugView/Tempo reale dopo consenso statistiche. I clic non equivalgono a richieste effettivamente ricevute.
