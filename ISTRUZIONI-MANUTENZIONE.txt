@@ -1,0 +1,14 @@
+ISTRUZIONI PER GITHUB PAGES — MANUTENZIONE INDEFINITA
+
+Dominio rilevato nel sito originale: studiolegale-ivanogrimaldi.it
+
+1. NON cancellare il branch originale (main).
+2. Su GitHub creare un nuovo branch chiamato manutenzione partendo da main.
+3. Nel branch manutenzione eliminare i file del sito precedente, poi caricare i file index.html, 404.html e CNAME contenuti in questo ZIP nella RADICE del repository.
+4. In Settings > Pages > Build and deployment selezionare Deploy from a branch, branch manutenzione, folder /(root), Save.
+5. Verificare homepage e alcune vecchie URL.
+6. Per ripristinare: Settings > Pages > branch main > /(root) > Save.
+
+NOTA: GitHub Pages NON permette di forzare tutte le vecchie URL a rispondere HTTP 200 con una sola pagina. Le vecchie URL restituiranno HTTP 404 mostrando la stessa grafica di manutenzione. Per farle rispondere tutte HTTP 200 servirebbe un host con regole di rewrite. Questo può danneggiare la SEO.
+La pagina contiene noindex perché la manutenzione è a tempo indeterminato.
+Non modificare DNS e non cancellare il repository.
