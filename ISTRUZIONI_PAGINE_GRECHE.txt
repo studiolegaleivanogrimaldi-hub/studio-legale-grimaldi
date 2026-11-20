@@ -1,0 +1,6 @@
+AGGIORNAMENTO GRECO - 20/11/2026
+Nuove pagine: /el/index.html, /el/online-fraud-italy.html, /el/debt-recovery-italy.html
+Le pagine sono statiche e non aggiungono dipendenze esterne.
+IMPORTANTE: non è stato attivato il link Viber, poiché l’iscrizione del numero a Viber non è stata confermata.
+Prima della pubblicazione: revisione dei testi greci da parte di un madrelingua e verifica delle informazioni legali; verificare i link e la sitemap.
+Per GitHub: caricare i file nella cartella /el/ del repository, senza sostituire l’intero sito se nel frattempo è stato aggiornato online.
