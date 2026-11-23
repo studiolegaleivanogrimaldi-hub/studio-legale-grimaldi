@@ -1,0 +1,72 @@
+
+name: Installa consenso Analytics su tutte le pagine
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica repository
+        uses: actions/checkout@v4
+
+      - name: Aggiorna pagine HTML
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          root = Path(".")
+          updated = 0
+
+          for path in root.rglob("*.html"):
+              if ".git" in path.parts:
+                  continue
+
+              html = path.read_text(encoding="utf-8")
+
+              # Non toccare le pagine con un sistema
+              # di consenso già presente.
+              if "analytics-consent.js" in html:
+                  continue
+
+              # Non modificare pagine con tag Analytics
+              # diretti: richiedono controllo manuale.
+              if (
+                  "googletagmanager.com/gtag/js" in html
+                  or "G-S1JWDLSMRC" in html
+              ):
+                  print(f"Controllo manuale: {path}")
+                  continue
+
+              if not re.search(r"</body\s*>", html, re.I):
+                  continue
+
+              tag = '<script defer src="/analytics-consent.js"></script>'
+              html = re.sub(
+                  r"</body\s*>",
+                  tag + "\n</body>",
+                  html,
+                  count=1,
+                  flags=re.I
+              )
+
+              path.write_text(html, encoding="utf-8")
+              updated += 1
+              print(f"Aggiornata: {path}")
+
+          print(f"Totale pagine aggiornate: {updated}")
+
+      - name: Salva modifiche
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.html'
+          if ! git diff --cached --quiet; then
+            git commit -m "Aggiunge consenso Analytics alle pagine HTML"
+            git push
+          fi
