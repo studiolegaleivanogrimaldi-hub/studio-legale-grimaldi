@@ -1,6 +1,6 @@
 {
-  "latest": "2026-09",
-  "checked_at": "2026-11-17",
+  "latest": "2026-10",
+  "checked_at": "2026-11-24",
   "source": "https://www.istat.it/Notizia/Indice-Dei-Prezzi-Per-Le-Rivalutazioni-Monetarie/",
   "months": {
     "2024-10": {
@@ -97,6 +97,10 @@
     },
     "2026-09": {
       "value": 104.3,
+      "base": 2025
+    },
+    "2026-10": {
+      "value": 105.4,
       "base": 2025
     }
   },
